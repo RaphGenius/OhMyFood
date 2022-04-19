@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/base/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/0cbab40a23.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/base/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0cbab40a23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Acceuil OhMyFood</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <p>ohmyfood</p>
+      <p>ohmyfood</p>
     </header>
 
     <main>
-         <div class="location"><i class="fa-solid fa-location-dot"></i> Paris, Belleville</div>
-        <div class="info-top">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <div class="info-top__btn btn"></div>
+      <div class="top-info">
+        <div class="top-info__location">
+          <i class="fa-solid fa-location-dot"></i> Paris, Belleville
         </div>
+        <div class="top-info__container">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <div class="top-info__btn btn"></div>
+        </div>
+      </div>
 
-    <section class="fonctionnement">
+      <section class="fonctionnement">
         <h2>Fonctionnement</h2>
         <ul>
-            <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-            <li> <div><i class="fa-solid fa-ellipsis-vertical"></i> <i class="fa-solid fa-bars"></i> </div>Composez votre menu</li>
-            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+            restaurant
+          </li>
+          <li>
+            <div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            Composez votre menu
+          </li>
+          <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
         </ul>
-    </section>
+      </section>
 
-    <section class="restaurants">
+      <section class="restaurants">
         <h2>Restaurants</h2>
-        
-    </section>
-    
+            <div class="card">
+                <div class="card__img"><img src="./images/restaurants/palette_gout.jpg" alt="Photo du restaurant La palette du goût">
+                    <p>Nouveau</p>
+                </div>
+                <div class="card__content">
+                    <div class="card__content-description">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div class="card__content-coeur"><i class="fa-thin fa-heart"></i></div>
+                </div>
+            </div>
+      </section>
     </main>
-    
-
-    
-</body>
+  </body>
 </html>
