@@ -347,3 +347,9 @@
   [hidden] {
     display: none;
   }
+
+  li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
