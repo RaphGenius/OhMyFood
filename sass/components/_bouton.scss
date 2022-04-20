@@ -8,5 +8,5 @@
     font-size: $size-txt;
     color: $color-white;
     border-radius: 200px*0.5;
-    box-shadow: 1px 2px 8px darken($color: $bg-color ,$amount: 20);
+    @include bg-shadow;
 }

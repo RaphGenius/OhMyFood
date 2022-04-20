@@ -1,3 +1,7 @@
+body, html {
+  font-family: roboto;
+}
+
 header p {
   font-family: "Shrikhand";
   text-align: center;
@@ -14,7 +18,7 @@ header p {
   font-size: 15px;
   color: white;
   border-radius: 100px;
-  box-shadow: 1px 2px 8px #aaaaaa;
+  box-shadow: 1px 2px 8px #c1c1c1;
 }
 
 .top-info {
@@ -29,10 +33,9 @@ header p {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  background-color: rgb(221, 221, 221);
   width: 100%;
   padding: 15px 0px;
-  border-top: #c4c4c4 solid 2px;
+  border-top: #dbdbdb solid 2px;
 }
 .top-info__location .location {
   margin-left: 10px;
@@ -60,14 +63,42 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
 }
-.function a {
-  text-decoration: none;
+.function__card {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  border-radius: 1rem;
+  transition: background-color 100ms ease;
+  box-shadow: 1px 2px 8px #c1c1c1;
+}
+.function__card:hover {
+  background-color: #f2eafb;
+}
+.function__card:hover i {
+  color: #9356DC;
+}
+.function__card-number {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  left: 5px;
+  padding-top: 5px;
+  height: 20px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+}
+.function__card i {
+  margin-right: 10px;
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */
