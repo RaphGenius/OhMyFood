@@ -3,6 +3,10 @@
 @import "./layout/header";
 @import "./utils/mixins";
 @import "./components/bouton";
+@import "./layout/footer";
+
+///////////////////////////////////////////////////////////////////////////
+
 .top-info{
     display: flex;
     flex-direction: column;
@@ -27,8 +31,11 @@
         align-items: center;
         background-color: $bg-color;
         width: 100%;
+        text-align: center;
         h1{
-            font-weight: 800;
+            font-weight: 800; 
+            line-height: 10px;
+            margin-top: 30px;
         }
         p{
             font-weight: 300;
@@ -36,7 +43,7 @@
     }
 }
 .top-info__btn{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /********** FONCTIONNEMENT *****************/
@@ -56,7 +63,7 @@
         flex-wrap: wrap;
         background-color: $bg-color;
         margin-bottom: 20px;
-        border-radius: 2rem*0.5;
+        border-radius: $brd-rad-card;
         transition: background-color 100ms ease;
         @include bg-shadow;
         &:hover{
@@ -87,10 +94,10 @@
 // RESTAURANTS // 
 
 .restaurants{
-    margin: 50px auto;
+    margin: 50px auto 0px;
     display: flex;
     flex-direction: column;
- background-color: $bg-color;
+    background-color: $bg-color;
     &__list{
         display: flex;
         flex-direction: column;
@@ -105,7 +112,7 @@
     overflow: hidden;
     position: relative;
     margin: 20px auto;
-    border-radius: 5%;
+    border-radius: $brd-rad-card;
     background-color: $color-white;
     @include bg-shadow;
     &__img{
@@ -136,9 +143,7 @@
     margin: $marg-card;
     line-height: 15px;
     & i {
-        
-        
+        font-size: 30px;
 
     }
-    
 }

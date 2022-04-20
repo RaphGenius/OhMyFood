@@ -1,0 +1,21 @@
+footer{
+    background-color: darken($color: $bg-color-dark, $amount: 75);
+    color: $color-white;
+    padding: 5px 0px;
+}
+.footer__container{
+    margin-left: 30px;
+    & i{
+        width: 10px;
+        margin-right: 20px;
+    }
+    & p{
+        line-height: 15px;
+        word-break: keep-all;
+    }
+    h4{
+        font-family: $font-logo-title;
+        font-size: 20px;
+        font-weight: 500;
+    }
+   }

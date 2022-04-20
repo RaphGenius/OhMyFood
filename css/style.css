@@ -25,6 +25,29 @@ header p {
   box-shadow: 1px 2px 8px #c1c1c1;
 }
 
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 5px 0px;
+}
+
+.footer__container {
+  margin-left: 30px;
+}
+.footer__container i {
+  width: 10px;
+  margin-right: 20px;
+}
+.footer__container p {
+  line-height: 15px;
+  word-break: keep-all;
+}
+.footer__container h4 {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .top-info {
   display: flex;
   flex-direction: column;
@@ -50,16 +73,19 @@ header p {
   align-items: center;
   background-color: #f4f4f4;
   width: 100%;
+  text-align: center;
 }
 .top-info__container h1 {
   font-weight: 800;
+  line-height: 10px;
+  margin-top: 30px;
 }
 .top-info__container p {
   font-weight: 300;
 }
 
 .top-info__btn {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /********** FONCTIONNEMENT *****************/
@@ -78,7 +104,7 @@ header p {
   flex-wrap: wrap;
   background-color: #f4f4f4;
   margin-bottom: 20px;
-  border-radius: 1rem;
+  border-radius: 20px;
   transition: background-color 100ms ease;
   box-shadow: 1px 2px 8px #c1c1c1;
 }
@@ -106,7 +132,7 @@ header p {
 }
 
 .restaurants {
-  margin: 50px auto;
+  margin: 50px auto 0px;
   display: flex;
   flex-direction: column;
   background-color: #f4f4f4;
@@ -125,7 +151,7 @@ header p {
   overflow: hidden;
   position: relative;
   margin: 20px auto;
-  border-radius: 5%;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 1px 2px 8px #c1c1c1;
 }
@@ -151,6 +177,9 @@ header p {
   align-items: center;
   margin: 0px 20px;
   line-height: 15px;
+}
+.card__content i {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
