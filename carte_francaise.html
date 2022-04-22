@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sass/base/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/0cbab40a23.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0cbab40a23.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,29 +30,76 @@
       <p>ohmyfood</p>
     </header>
     <main>
-      <div class="image_presentation">
-        <img src="./images/restaurants/a_la_francaise.jpg" alt="">
-      </div>
       
-      <section class="carte_restaurant">
-        <div class="titre_restaurant">
-          <span class="titre_restaurant titre_restaurant__nom">A la française</h1>
-          <div class="card__content-coeur heart">
-            <i class="fa-thin fa-heart"></i>
+      <div class="image_presentation">
+        <img src="./images/restaurants/a_la_francaise.jpg" alt="" />
+      </div>
+
+      <section class="presentation_restaurant">
+        <div class="bg"></div>
+        <div class="carte">
+          <div class="carte_top">
+            <span class="carte_top__name">A la francaise</span>
+            <i class="fa-thin fa-heart heart"></i>
           </div>
+
+          <div class="menu">
+            <!--ENTRE-->
+            <div class="menu_repas">
+              <span class="menu_repas__name">entrée</span>
+              <div class="choix_plat">
+                <span class="choix_plat__principal">Tartare de pouple acidulé</span>
+                <div class="choix_plat__complement">
+                  <p>aux zests d'orange</p>
+                  <span class="choix_plat__complement_price">25€</span>
+                </div>
+              </div>
+
+              <div class="choix_plat">
+                <span class="choix_plat__principal">Velouté de légumes d'antan</span>
+                <div class="choix_plat__complement">
+                  <p>carotte, panais, topinambour</p>
+                  <span class="choix_plat__complement_price">35€</span>
+                </div>
+              </div>
+
+            </div>
+            <!--PLATS-->
+            <div class="menu_repas">
+              <span class="menu_repas__name">plats</span>
+              <div class="choix_plat">
+                <span class="choix_plat__principal">Coquilles Saint-Jacques</span>
+                <div class="choix_plat__complement">
+                  <p>Accompagnées d'une purée de panais</p>
+                  <span class="choix_plat__complement_price">40€</span>
+                </div>
+              </div>
+
+              <div class="choix_plat">
+                <span class="choix_plat__principal">Magret de canard</span>
+                <div class="choix_plat__complement">
+                  <p>Et parmentier de pommes de terres</p>
+                  <span class="choix_plat__complement_price">35€</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
-        <div class="menu">
-          <span class="nom_menu">entrées</span>
-          <div class="plat">
-            <span class="plat__nom">Tartare de poulpe acidulé</span>
-            <div class="plat__nom_complement">
-              <p>Aux zests d'orange</p>
-              <p>25€</p>
-            </div>   
-          </div>
-        </div>
-               
+
       </section>
+
     </main>
-  
+    <footer>
+      <div class="footer__container">
+        <h4>ohmyfood</h4>
+          <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+          <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+          <p>Mentions légales</p>
+          <p><a href="mailto:tructruc@hotmail.com">Contact</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

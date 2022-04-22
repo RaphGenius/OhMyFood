@@ -1,3 +1,7 @@
 @mixin bg-shadow{
     box-shadow: 1px 2px 8px darken($color: $bg-color ,$amount: 20);
 }
+
+@mixin bg-shadow-strong{
+    box-shadow: 0px 3px 10px darken($color: $bg-color ,$amount: 80);
+}

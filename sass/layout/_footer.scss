@@ -18,4 +18,13 @@ footer{
         font-size: 20px;
         font-weight: 500;
     }
+    & a{
+        color: transparent;
+        background-color: white;
+        -webkit-background-clip: text;
+        &:hover{
+            background:linear-gradient(20deg, $color-primary, $color-secondary);
+            -webkit-background-clip: text;
+        }
+    }
    }
