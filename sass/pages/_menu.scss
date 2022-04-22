@@ -16,6 +16,8 @@
 .presentation_restaurant{
     background-color: $bg-color;
     padding: $marg-card;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
 }
 
 .carte_top{ 
@@ -47,6 +49,26 @@
     border-radius: $brd-rad-card;
     @include bg-shadow;
     font-weight: bold;
+    transition: transform 300ms ease;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "";
+        width: 80px;
+        position: absolute;
+        top: 0px;
+        height: 80px;
+        right: -100px;
+        transform: translateX(0px);
+        background-color: $color-tertiary;
+        transition: transform 300ms ease;
+    }
+    &:hover{
+        &::after{    
+            transform: translateX(-100px);       
+        }
+    }
+   
     &__complement{
         display: flex;
         align-items: center;

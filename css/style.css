@@ -243,6 +243,8 @@ footer {
 .presentation_restaurant {
   background-color: #f4f4f4;
   padding: 0px 20px;
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
 }
 
 .carte_top {
@@ -274,6 +276,23 @@ footer {
   border-radius: 20px;
   box-shadow: 1px 2px 8px #c1c1c1;
   font-weight: bold;
+  transition: transform 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+.choix_plat::after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  right: -100px;
+  transform: translateX(0px);
+  background-color: #99E2D0;
+  transition: transform 300ms ease;
+}
+.choix_plat:hover::after {
+  transform: translateX(-100px);
 }
 .choix_plat__complement {
   display: flex;
