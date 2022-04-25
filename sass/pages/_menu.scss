@@ -52,9 +52,13 @@
     transition: transform 300ms ease;
     position: relative;
     overflow: hidden;
+    &__complement_price{
+        transform: translateX(0px);
+        transition: transform 300ms ease;
+    }
     &::after {
         content: "";
-        width: 80px;
+        width: 90px;
         position: absolute;
         top: 0px;
         height: 80px;
@@ -65,8 +69,17 @@
     }
     &:hover{
         &::after{    
-            transform: translateX(-100px);       
+            transform: translateX(-90px);       
         }
+        .choix_plat__complement_price{
+            transform: translateX(-80px);
+        }
+        .check{
+            transform: translateX(-3px) rotate(0deg);
+        }
+    }
+    &:hover{
+        
     }
    
     &__complement{
@@ -79,4 +92,17 @@
         }
     }
 }
-
+.check{
+    position: absolute;
+    font-size: 35px;
+    right: 16px;
+    top: 23px;
+    z-index: 10;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $color-tertiary;
+    background-color: white;
+    transform: translateX(90px) rotate(-360deg);
+    transition: transform 300ms ease;
+}

@@ -280,9 +280,13 @@ footer {
   position: relative;
   overflow: hidden;
 }
+.choix_plat__complement_price {
+  transform: translateX(0px);
+  transition: transform 300ms ease;
+}
 .choix_plat::after {
   content: "";
-  width: 80px;
+  width: 90px;
   position: absolute;
   top: 0px;
   height: 80px;
@@ -292,13 +296,33 @@ footer {
   transition: transform 300ms ease;
 }
 .choix_plat:hover::after {
-  transform: translateX(-100px);
+  transform: translateX(-90px);
+}
+.choix_plat:hover .choix_plat__complement_price {
+  transform: translateX(-80px);
+}
+.choix_plat:hover .check {
+  transform: translateX(-3px) rotate(0deg);
 }
 .choix_plat__complement {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
+}
+.check {
+  position: absolute;
+  font-size: 35px;
+  right: 16px;
+  top: 23px;
+  z-index: 10;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #99E2D0;
+  background-color: white;
+  transform: translateX(90px) rotate(-360deg);
+  transition: transform 300ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */
