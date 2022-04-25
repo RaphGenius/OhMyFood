@@ -116,6 +116,7 @@
     border-radius: $brd-rad-card;
     background-color: $color-white;
     @include bg-shadow;
+    color: black;
     &__img {
       img {
         position: relative;

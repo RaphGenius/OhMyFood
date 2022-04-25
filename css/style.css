@@ -181,6 +181,7 @@ footer {
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 2px 8px #c1c1c1;
+  color: black;
 }
 .card__img img {
   position: relative;
@@ -221,6 +222,13 @@ footer {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-stroke-color: white;
+}
+
+.fa-arrow-left {
+  float: left;
+  font-size: 35px;
+  margin-left: 20px;
+  color: black;
 }
 
 .image_presentation {
@@ -279,6 +287,7 @@ footer {
   transition: transform 300ms ease;
   position: relative;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .choix_plat__complement_price {
   transform: translateX(0px);
@@ -302,7 +311,7 @@ footer {
   transform: translateX(-80px);
 }
 .choix_plat:hover .check {
-  transform: translateX(-3px) rotate(0deg);
+  transform: translateX(-4px) rotate(0deg);
 }
 .choix_plat__complement {
   display: flex;
@@ -313,7 +322,7 @@ footer {
 .check {
   position: absolute;
   font-size: 35px;
-  right: 16px;
+  right: 17px;
   top: 23px;
   z-index: 10;
   -webkit-background-clip: text;
