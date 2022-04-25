@@ -15,6 +15,7 @@
       & input{
         border: none;
         background-color: transparent;
+        margin-left: 5px;
         &:focus-visible{
           border: none;
           outline:  none;
@@ -151,13 +152,15 @@
     -webkit-background-clip: text;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    background-color: white;
+    background-image: white;
+    transform: scale(1);
     cursor: pointer;
     transition: all 200ms ease;
     &:hover{
-      background: -webkit-linear-gradient($color-primary,$color-secondary);
-        -webkit-background-clip: text;
-      -webkit-text-stroke-color:white;
+      background-image:linear-gradient($color-primary,$color-secondary);
+      -webkit-text-stroke-color:$color-white;
+      transform: scale(1.2);
+      /*-webkit-text-stroke-width: 2px;*/
       
     }
     
