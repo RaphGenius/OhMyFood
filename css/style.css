@@ -190,6 +190,7 @@ footer {
   background-color: white;
   box-shadow: 1px 2px 8px #c1c1c1;
   color: black;
+  transition: transform 50ms ease-in;
 }
 .card__img img {
   position: relative;
@@ -205,6 +206,10 @@ footer {
   color: #2c9c81;
   background-color: #99E2D0;
   padding: 5px 10px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 2px 8px #c1c1c1;
 }
 
 .card__content {
@@ -360,64 +365,58 @@ footer {
     transform: rotate(0deg);
   }
 }
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 100vh;
-  opacity: 1;
-  inset: 0;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  z-index: 5;
-  animation: bg 1500ms 2000ms forwards ease-in;
-}
-.loader div {
-  font-family: "Shrikhand";
-  font-size: 80px;
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  background-image: #99E2D0;
+/*.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    height: 100vh;
+    opacity: 1;
+    inset: 0;
+    background-image:linear-gradient($color-primary,$color-secondary);
+    z-index: 5;
+    animation : bg 1000ms 2000ms forwards ease-in;
+    & div{
+        font-family: $font-logo-title;
+        font-size: $size-logo + 50px;
+        color: transparent;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 2px;
+    }
 }
 
-@keyframes oh {
-  0% {
-    transform: translateX(-2000px);
+@keyframes oh{
+    0%{
+      transform:translateX(-2000px)
+    }
   }
-}
-@keyframes my {
-  0% {
-    transform: translateY(2000px);
+  @keyframes my{
+    0%{
+      transform:translateY(2000px)
+    }
   }
-}
-@keyframes food {
-  0% {
-    transform: translateX(2000px);
+  @keyframes food{
+    0%{
+      transform:translateX(2000px) ;
+    }
   }
-}
-.oh {
-  animation: oh 1500ms linear alternate;
-}
+  .oh{
+    animation: oh 1500ms linear both;
+  }
 
-.my {
-  animation: my 1000ms 500ms both;
-}
-
-.food {
-  animation: food 1500ms linear;
-}
-
-@keyframes bg {
-  0% {
-    background: linear-gradient(10deg, #9356DC, #FF79DA);
+  .my{
+    animation: my 1500ms linear both;
   }
-  100% {
-    background: linear-gradient(10deg, #9356DC, #FF79DA);
-    transform: translateY(3000px);
+  .food{
+    animation: food 1500ms linear  ;
+  }
+
+  @keyframes bg{
+
+    100%{
+    transform: translateY(-3000px) ;
     opacity: 0;
-  }
-}
+    }
+  }*/
 
 /*# sourceMappingURL=style.css.map */

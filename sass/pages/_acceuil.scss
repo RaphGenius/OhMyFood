@@ -118,6 +118,7 @@
     background-color: $color-white;
     @include bg-shadow;
     color: black;
+    transition:  transform 50ms ease-in;
     &__img {
       img {
         position: relative;
@@ -135,6 +136,10 @@
       color: darken($color: $color-tertiary, $amount: 35);
       background-color: $color-tertiary;
       padding: 5px 10px;
+    }
+    &:hover{
+      transform: scale(1.05);
+      @include bg-shadow;
     }
   }
   
