@@ -59,7 +59,13 @@
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-
+    animation: animation-card 500ms both;
+    @for $i from 1 to 9 {
+        &--#{$i}{
+            animation-delay: 50ms * $i
+        }
+        
+    }
      
     &__complement_price{
         transform: translateX(0px);

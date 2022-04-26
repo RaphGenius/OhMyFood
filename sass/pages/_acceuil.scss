@@ -119,6 +119,7 @@
     @include bg-shadow;
     color: black;
     transition:  transform 50ms ease-in;
+
     &__img {
       img {
         position: relative;
@@ -165,4 +166,16 @@
       
     }
     
+  }
+
+  @keyframes animation-card {
+    0%{
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
