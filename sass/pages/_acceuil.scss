@@ -148,19 +148,15 @@
   .heart {
     font-size: 30px;
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     background-image: white;
-    transform: scale(1);
     cursor: pointer;
-    transition: all 200ms ease;
+    transition: background-image 800ms ease;
     &:hover{
       background-image:linear-gradient($color-primary,$color-secondary);
-      -webkit-text-stroke-color:$color-white;
-      transform: scale(1.2);
-      /*-webkit-text-stroke-width: 2px;*/
+      -webkit-text-stroke-width: 0px;
       
     }
     
