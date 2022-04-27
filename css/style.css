@@ -304,18 +304,6 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: animation-card 500ms both;
-  /* &::after {
-       content: "";
-       width: 90px;
-       position: absolute;
-       top: 0px;
-       height: 80px;
-       right: -100px;
-       transform: translateX(0px);
-       background-color: $color-tertiary;
-       transition: transform 300ms ease;
-       z-index: 5;
-   }*/
 }
 .choix_plat--1 {
   animation-delay: 50ms;
@@ -341,6 +329,9 @@ footer {
 .choix_plat--8 {
   animation-delay: 400ms;
 }
+.choix_plat--9 {
+  animation-delay: 450ms;
+}
 .choix_plat__check-square {
   display: flex;
   position: absolute;
@@ -356,14 +347,6 @@ footer {
   transform: translateX(0px);
   transition: transform 300ms ease;
   display: block;
-}
-.choix_plat:hover {
-  /* &::after, {    // boite verte
-       transform: translateX(-90px);       
-   }*/
-  /*.check{
-       transform: translateX(-4px) rotate(360deg);
-   }*/
 }
 .choix_plat:hover .choix_plat__complement_price {
   transform: translateX(-80px);
@@ -403,6 +386,10 @@ footer {
     transform: rotate(360deg);
   }
 }
+.btn_explorer {
+  margin: 50px auto;
+}
+
 /*.loader{
     display: flex;
     justify-content: center;
