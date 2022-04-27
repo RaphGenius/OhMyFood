@@ -253,7 +253,7 @@ footer {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .presentation_restaurant {
@@ -304,6 +304,18 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: animation-card 500ms both;
+  /* &::after {
+       content: "";
+       width: 90px;
+       position: absolute;
+       top: 0px;
+       height: 80px;
+       right: -100px;
+       transform: translateX(0px);
+       background-color: $color-tertiary;
+       transition: transform 300ms ease;
+       z-index: 5;
+   }*/
 }
 .choix_plat--1 {
   animation-delay: 50ms;
@@ -329,37 +341,38 @@ footer {
 .choix_plat--8 {
   animation-delay: 400ms;
 }
+.choix_plat__check-square {
+  display: flex;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: #99E2D0;
+  right: 0px;
+  top: 0px;
+  transform: translateX(100px);
+  transition: transform 300ms ease;
+}
 .choix_plat__complement_price {
   transform: translateX(0px);
   transition: transform 300ms ease;
   display: block;
 }
-.choix_plat::after {
-  display: block;
-  content: "";
-  width: 90px;
-  position: absolute;
-  top: 0px;
-  height: 80px;
-  right: -100px;
-  transform: translateX(0px);
-  background-color: #99E2D0;
-  transition: transform 300ms ease;
-  z-index: 5;
-}
 .choix_plat:hover {
-  /* .check{
-        transform: translateX(-4px) rotate(0deg);
-    }*/
-}
-.choix_plat:hover::after {
-  transform: translateX(-90px);
+  /* &::after, {    // boite verte
+       transform: translateX(-90px);       
+   }*/
+  /*.check{
+       transform: translateX(-4px) rotate(360deg);
+   }*/
 }
 .choix_plat:hover .choix_plat__complement_price {
   transform: translateX(-80px);
 }
 .choix_plat:hover .check {
-  animation: checked-translate 400ms forwards alternate ease;
+  animation: check-rotate 300ms both alternate ease;
+}
+.choix_plat:hover .choix_plat__check-square {
+  transform: translateX(0px);
 }
 .choix_plat__complement {
   display: flex;
@@ -369,35 +382,25 @@ footer {
   font-weight: 500;
   text-overflow: ellipsis;
 }
+
 .check {
   position: absolute;
   font-size: 35px;
-  right: 17px;
-  top: 23px;
-  z-index: 10;
+  top: 22px;
+  left: 25px;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #99E2D0;
   background-color: white;
-  transform: translateX(90px);
-  transition: transform 300ms ease;
 }
 
-@keyframes checked-translate {
+@keyframes check-rotate {
   0% {
-    transform: translateX(90px) rotate(-360deg);
-  }
-  100% {
-    transform: translateX(-4px) rotate(0deg);
-  }
-}
-@keyframes checked-rotate {
-  0% {
-    transform: rotate(-360deg);
-  }
-  100% {
     transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /*.loader{
@@ -440,10 +443,10 @@ footer {
   }
 
   .my{
-    animation: my 1500ms linear both;
+    animation: my 1000ms 500ms linear both;
   }
   .food{
-    animation: food 1500ms linear  ;
+    animation: food 500ms 1000ms linear both;
   }
 
   @keyframes bg{
@@ -453,5 +456,105 @@ footer {
     opacity: 0;
     }
   }*/
+/* .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    height: 100vh;
+    opacity: 1;
+    inset: 0;
+    background-image:linear-gradient($color-primary,$color-secondary);
+    &_lettre{
+        font-family: $font-logo-title;
+        font-size: $size-logo + 50px;
+        color: transparent;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 2px;
+        margin-left: 10px;
+        &-0{
+          display: inline-block;
+          overflow: hidden;
+          border: 1px solid black;
+        }
+        &-2{
+          transform: translateX(-100px);
+        }
+    }    
+}*/
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  opacity: 1;
+  inset: 0;
+  z-index: 5;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  animation: bg 1000ms 2500ms forwards ease-in;
+}
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  overflow: hidden;
+}
+.loader_lettre {
+  font-family: "Shrikhand";
+  font-size: 80px;
+}
+.loader_lettre-0 {
+  animation: lettre_o 800ms 200ms cubic-bezier(0.39, 0.98, 0.08, 0.92) both;
+}
+.loader_lettre-1 {
+  transform: translateX(-150px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-2 {
+  transform: translateX(-300px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-3 {
+  transform: translateX(-450px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-4 {
+  transform: translateX(-600px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-5 {
+  transform: translateX(-750px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-6 {
+  transform: translateX(-900px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+.loader_lettre-7 {
+  transform: translateX(-1050px);
+  animation: lettre_X 1000ms 1000ms forwards;
+}
+
+@keyframes lettre_o {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes lettre_X {
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bg {
+  100% {
+    transform: translateY(-3000px);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
