@@ -9,4 +9,8 @@
     color: $color-white;
     border-radius: 200px*0.5;
     @include bg-shadow;
+    &:hover{
+        @include bg-shadow-strong;
+        opacity: $opacity-main-btn;
+      }
 }
