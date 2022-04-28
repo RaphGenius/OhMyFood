@@ -134,7 +134,6 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   width: 90%;
   background-color: #f4f4f4;
@@ -164,6 +163,11 @@ footer {
 }
 .function__card i {
   color: grey;
+  margin-left: 30px;
+  width: 20px;
+}
+.function__card p {
+  margin-left: 20px;
 }
 
 .restaurants {
@@ -288,7 +292,13 @@ footer {
 }
 .menu_repas__name {
   text-transform: uppercase;
-  border-bottom: #99E2D0 2px solid;
+}
+.menu_repas__name::after {
+  content: ".";
+  border-bottom: 3px solid #99E2D0;
+  width: 30px;
+  display: block;
+  font-size: 0px;
 }
 
 .choix_plat {
@@ -302,8 +312,8 @@ footer {
   transition: transform 300ms ease;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  animation: animation-card 500ms both;
 }
 .choix_plat--1 {
   animation-delay: 50ms;
@@ -331,6 +341,11 @@ footer {
 }
 .choix_plat--9 {
   animation-delay: 450ms;
+}
+.choix_plat__principal, .choix_plat p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .choix_plat__check-square {
   display: flex;
@@ -361,9 +376,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
   font-weight: 500;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.choix_plat__complement p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .check {
@@ -388,6 +407,9 @@ footer {
 }
 .btn_explorer {
   margin: 50px auto;
+}
+.btn_explorer:hover {
+  box-shadow: 0px 3px 10px #282828;
 }
 
 /*.loader{

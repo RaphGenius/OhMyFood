@@ -42,7 +42,15 @@
         margin-top: 30px;
         &__name{
             text-transform: uppercase;
-            border-bottom: $color-tertiary 2px solid;
+          //  border-bottom: $color-tertiary 2px solid;
+          &::after{
+            content: ".";
+            border-bottom: 3px solid #99E2D0;
+            width: 30px;
+            display: block;
+            font-size: 0px;
+           
+        }
         }
     }
 }
@@ -58,12 +66,18 @@
     transition: transform 300ms ease;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    animation: animation-card 500ms both;
+  //  animation: animation-card 500ms both;
     @for $i from 1 to 10 {
         &--#{$i}{
             animation-delay: 50ms * $i
         } 
+    }
+    &__principal, p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &__check-square{
         display: flex;
@@ -96,10 +110,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap:nowrap;
         font-weight: 500;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
+    
 }
 .check{
     position: absolute;
@@ -123,4 +143,7 @@
 
 .btn_explorer{
     margin: 50px auto;
+    &:hover{
+        @include bg-shadow-strong;}
 }
+
