@@ -180,7 +180,10 @@
     justify-content: space-between;
     align-items: center;
     margin: $marg-card;
-    line-height: 15px;
+    line-height: 10px;
+    &-description{
+      font-weight: 400;
+    }
   }
   /*
   .heart {

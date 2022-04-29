@@ -277,7 +277,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 0px 20px;
-  line-height: 15px;
+  line-height: 10px;
+}
+.card__content-description {
+  font-weight: 400;
 }
 
 /*
@@ -385,6 +388,7 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  animation: animation-card 500ms both;
 }
 .choix_plat--1 {
   animation-delay: 50ms;

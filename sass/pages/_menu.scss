@@ -76,7 +76,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  //  animation: animation-card 500ms both;
+  animation: animation-card 500ms both;
     @for $i from 1 to 10 {
         &--#{$i}{
             animation-delay: 50ms * $i
