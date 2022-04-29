@@ -198,6 +198,22 @@ footer {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .function {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+  }
+  .function__card {
+    width: 30%;
+    max-width: 300px;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  .function i {
+    margin-left: 0px;
+  }
+}
 .restaurants {
   margin: 50px auto 0px;
   display: flex;
@@ -215,8 +231,8 @@ footer {
 @media screen and (min-width: 992px) {
   .restaurants__list {
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1500px;
   }
 }
 .card {
@@ -251,6 +267,11 @@ footer {
   box-shadow: 1px 2px 8px #c1c1c1;
 }
 
+@media screen and (min-width: 992px) {
+  .card {
+    width: 45%;
+  }
+}
 .card__content {
   display: flex;
   justify-content: space-between;
