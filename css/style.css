@@ -76,6 +76,33 @@ footer {
   color: black;
 }
 
+.heart {
+  position: relative;
+  font-size: 30px;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
+}
+.heart_vide {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+.heart_plein {
+  transform: scale(0);
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-stroke-width: 0px;
+  transition: transform 500ms ease;
+}
+.heart:hover .heart_vide {
+  opacity: 0;
+}
+.heart:hover .heart_plein {
+  transform: scale(1);
+}
+
 .top-info {
   display: flex;
   flex-direction: column;
@@ -225,6 +252,7 @@ footer {
   line-height: 15px;
 }
 
+/*
 .heart {
   font-size: 30px;
   color: transparent;
@@ -234,12 +262,16 @@ footer {
   background-image: white;
   cursor: pointer;
   transition: background-image 800ms ease;
-}
-.heart:hover {
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-text-stroke-width: 0px;
-}
+  &:hover{
+    .heart_vide{
+      opacity: 0;
+    }
+    .heart_plein{
+      background-image:linear-gradient($color-primary,$color-secondary);
+      -webkit-text-stroke-width: 0px;
+    }
 
+  } */
 @keyframes animation-card {
   0% {
     transform: translateY(20px);

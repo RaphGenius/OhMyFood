@@ -153,6 +153,7 @@
     margin: $marg-card;
     line-height: 15px;
   }
+  /*
   .heart {
     font-size: 30px;
     color: transparent;
@@ -163,10 +164,29 @@
     cursor: pointer;
     transition: background-image 800ms ease;
     &:hover{
-      background-image:linear-gradient($color-primary,$color-secondary);
-      -webkit-text-stroke-width: 0px;
-    } 
-  }
+      .heart_vide{
+        opacity: 0;
+      }
+      .heart_plein{
+        background-image:linear-gradient($color-primary,$color-secondary);
+        -webkit-text-stroke-width: 0px;
+      }
+      
+    } */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
   @keyframes animation-card {
     0%{
       transform: translateY(20px);
