@@ -110,6 +110,16 @@
       margin: 0px auto;
     }
   }
+
+@media screen and (min-width:$break-point-desktop){
+  .restaurants{
+    &__list{
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    }   
+  }
+}
   .card {
     width: 100%;
     max-width: 700px;

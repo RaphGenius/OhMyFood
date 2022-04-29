@@ -42,19 +42,27 @@
         margin-top: 30px;
         &__name{
             text-transform: uppercase;
-          //  border-bottom: $color-tertiary 2px solid;
           &::after{
             content: ".";
             border-bottom: 3px solid #99E2D0;
             width: 30px;
             display: block;
-            font-size: 0px;
-           
+            font-size: 0px;          
         }
         }
     }
 }
-
+@media screen and (min-width:$break-point-desktop){
+    .menu{
+        flex-direction: row;
+        justify-content: space-evenly;
+        &_repas{
+            width: 30%;
+            max-width: 500px;
+        }
+    }
+    
+}
 .choix_plat{
     padding: 15px;
     height: 50px;
