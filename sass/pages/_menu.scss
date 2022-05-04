@@ -64,8 +64,11 @@
     
 }
 .choix_plat{
-    padding: 15px;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 15px;
+    height: 80px;
     margin-top: 20px;
     background-color: $color-white;
     border-radius: $brd-rad-card;
@@ -74,18 +77,25 @@
     transition: transform 300ms ease;
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  animation: animation-card 500ms both;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    animation: animation-card 500ms both;
     @for $i from 1 to 10 {
         &--#{$i}{
             animation-delay: 50ms * $i
         } 
     }
-    &__principal, p {
+    &__principal {
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        text-overflow: ellipsis;
         white-space: nowrap;
+        text-overflow: ellipsis;
+        & p{
+            overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        }
     }
     &__check-square{
         display: flex;
@@ -114,6 +124,9 @@
         .choix_plat__check-square{
             transform: translateX(0px);
         }
+        .choix_plat__principal{
+            
+        }
     }
     &__complement{
         display: flex;
@@ -123,10 +136,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         
-        p{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
     }
     
 }
