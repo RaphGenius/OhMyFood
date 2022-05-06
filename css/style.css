@@ -141,9 +141,11 @@ footer {
 .top-info__container h1 {
   font-weight: 800;
   margin-top: 30px;
+  padding: 0px 20px;
 }
 .top-info__container p {
   font-weight: 300;
+  padding: 0px 15px;
 }
 
 .top-info__btn {
