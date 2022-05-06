@@ -486,85 +486,6 @@ footer {
   box-shadow: 0px 3px 10px #282828;
 }
 
-/*.loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:fixed;
-    height: 100vh;
-    opacity: 1;
-    inset: 0;
-    background-image:linear-gradient($color-primary,$color-secondary);
-    z-index: 5;
-    animation : bg 1000ms 2000ms forwards ease-in;
-    & div{
-        font-family: $font-logo-title;
-        font-size: $size-logo + 50px;
-        color: transparent;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 2px;
-    }
-}
-
-@keyframes oh{
-    0%{
-      transform:translateX(-2000px)
-    }
-  }
-  @keyframes my{
-    0%{
-      transform:translateY(2000px)
-    }
-  }
-  @keyframes food{
-    0%{
-      transform:translateX(2000px) ;
-    }
-  }
-  .oh{
-    animation: oh 1500ms linear both;
-  }
-
-  .my{
-    animation: my 1000ms 500ms linear both;
-  }
-  .food{
-    animation: food 500ms 1000ms linear both;
-  }
-
-  @keyframes bg{
-
-    100%{
-    transform: translateY(-3000px) ;
-    opacity: 0;
-    }
-  }*/
-/* .loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:fixed;
-    height: 100vh;
-    opacity: 1;
-    inset: 0;
-    background-image:linear-gradient($color-primary,$color-secondary);
-    &_lettre{
-        font-family: $font-logo-title;
-        font-size: $size-logo + 50px;
-        color: transparent;
-        -webkit-text-stroke-color: black;
-        -webkit-text-stroke-width: 2px;
-        margin-left: 10px;
-        &-0{
-          display: inline-block;
-          overflow: hidden;
-          border: 1px solid black;
-        }
-        &-2{
-          transform: translateX(-100px);
-        }
-    }    
-}*/
 .loader {
   display: flex;
   justify-content: center;
@@ -586,7 +507,7 @@ footer {
 }
 .loader_lettre {
   font-family: "Shrikhand";
-  font-size: 80px;
+  font-size: 55px;
 }
 .loader_lettre-0 {
   animation: lettre_o 800ms 200ms cubic-bezier(0.39, 0.98, 0.08, 0.92) both;
