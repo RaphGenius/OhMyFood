@@ -123,6 +123,14 @@ footer {
   background-color: transparent;
   margin-left: 5px;
 }
+.top-info__location input::-webkit-input-placeholder {
+  /*Google*/
+  color: black !important;
+}
+.top-info__location input::-moz-placeholder {
+  color: black !important;
+  opacity: 1;
+}
 .top-info__location input:focus-visible {
   border: none;
   outline: none;
@@ -461,6 +469,7 @@ footer {
 .choix_plat:hover .choix_plat__check-square {
   transform: translateX(0px);
 }
+
 .check {
   position: absolute;
   font-size: 35px;
